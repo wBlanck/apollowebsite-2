@@ -1,0 +1,52 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway:100,400,700';
+
+@font-face {
+  font-family: 'LMRomanSlant10';
+  src: url('/css/fonts/lmromanslant10-regular-webfont.eot');
+  src: url('/css/fonts/lmromanslant10-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/css/fonts/lmromanslant10-regular-webfont.woff') format('woff'),
+       url('/css/fonts/lmromanslant10-regular-webfont.ttf') format('truetype'),
+       url('/css/fonts/lmromanslant10-regular-webfont.svg#latin_modern_roman_slante10Rg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --clr-gray-100: #efefef;
+  --clr-gray-400: #909090;
+  --clr-dark-900: #222;
+  --ff-lmroman: 'LMRomanSlant10', sans-serif;
+  --ff-raleway: 'Raleway', sans-serif;
+}
+/* common styles */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--ff-lmroman);
+}
+
+h2 {
+  font-weight: 200;
+  font-family: var(--ff-raleway);
+}
+
+.text-gray--bold {
+  color: var(--clr-dark-900);
+  font-weight: 700;
+}
+
+.main-wrapper {
+  width: min(90%, 140rem);
+  max-height: 60rem;
+  margin: 0 auto 3rem auto;
+}
+/* end of commonstyles */
+/* HEADER */
+.header {
+  margin-top: 3rem;
+  background-color: var(--clr-gray-100);
+}
+/* end of HEADER */
