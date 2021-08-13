@@ -76,6 +76,9 @@ svg {
   position: relative;
   overflow: hidden;
 }
+#active {
+  opacity: 1;
+}
 /* end of commonstyles */
 /* HEADER */
 
@@ -303,8 +306,22 @@ svg {
   position: absolute;
   top: 0;
 }
-.slideshow__img {
-
+ .slideshow__list > li {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  background-position: center;
+} 
+.slideshow__item-1 {
+  background: url('../img/full-slide/thumb-1.jpg');
+}
+.slideshow__item-2 {
+  background: url('../img/full-slide/thumb-2.jpg');
+}
+.slideshow__item-3 {
+  background: url('../img/full-slide/thumb-3.jpg');
 }
 /* end of slideshow */
 @media screen and (max-width: 1025px) {
