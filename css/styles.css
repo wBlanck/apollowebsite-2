@@ -187,6 +187,7 @@ svg {
 .header__paragraph {
   font-size: 1.6rem;
   margin-bottom: 3rem;
+  max-width: 45rem;
 }
 .header__text::after {
   content: '';
@@ -225,7 +226,6 @@ svg {
   content: '';
   position: relative;
   bottom: 1.5rem;
-
   display: inline-block;
   width: 7rem;
   height: .1rem;
@@ -324,6 +324,41 @@ svg {
   background: url('../img/full-slide/thumb-3.jpg');
 }
 /* end of slideshow */
+/* featured */
+.featured__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.featured__text {
+  width: 45%;
+}
+.featured__text::after {
+  content: '';
+  display: block;
+  left: 0;
+  bottom: -10rem;
+  height: 7rem;
+  width: .1rem;
+  background-color: var(--clr-dark-900);
+}
+.featured__heading {
+  font-size: 4.2rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.featured__paragraph {
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+  max-width: 45rem;
+}
+.featured__img-wrapper {
+  width: 55%;
+}
+
+/* end of featured */
 @media screen and (max-width: 1025px) {
   .header__img-wrapper {
     display: none;
@@ -340,9 +375,6 @@ svg {
   }
   .header__content {
     justify-content: flex-end;
-  }
-  .header__paragraph {
-    max-width: 45rem;
   }
   .about__img-wrapper {
     display: none;
@@ -362,6 +394,23 @@ svg {
   .about__heading::before {
     display: none;
   }
+
+  .featured__img-wrapper {
+    display: none;
+  }
+  .featured__text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+    text-align: right;
+  }
+  .featured__text::after {
+    display: none;
+  }
+  .featured__content {
+    justify-content: flex-end;
+  }
 }
 @media screen and (max-width: 600px) {
   .header {
@@ -375,6 +424,9 @@ svg {
   .header__heading {
     font-size: 3rem;
     margin-bottom: 2rem;
+  }
+  .header__paragraph {
+    max-width: 100%;
   }
   .about {
     padding: 1.5rem 1.5rem 0 1.5rem;
@@ -398,5 +450,19 @@ svg {
     text-align: center;
     font-size: 1.4rem;
   }
-  
+  .featured {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .featured__text {
+    text-align: center;
+    align-items: center;
+  }
+  .featured__heading {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  .featured__paragraph {
+    max-width: 100%;
+  }
 }
