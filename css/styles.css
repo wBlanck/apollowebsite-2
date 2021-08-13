@@ -263,6 +263,50 @@ svg {
   padding: .8rem;
 }
 /* end of about */
+/* slideshow */
+.slideshow {
+  height: 100%;
+  overflow: hidden;
+}
+
+.slideshow > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  width: 6rem;
+  background-color: #fff;
+  font-size: 2rem;
+  position: absolute;
+  cursor: pointer;
+  transform: translateY(-50%) scale(1);;
+  transition: all .2s ease-in-out;
+  z-index: 5;
+}
+.slideshow > div:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+.slideshow__btn-left {
+  top: 50%;
+  left: 3rem;
+}
+.slideshow__btn-right {
+  top: 50%;
+  right: 3rem;
+}
+.slideshow__list {
+  margin: 0;
+  height: 100%;
+  position: relative;
+}
+.slideshow__item {
+  position: absolute;
+  top: 0;
+}
+.slideshow__img {
+
+}
+/* end of slideshow */
 @media screen and (max-width: 1025px) {
   .header__img-wrapper {
     display: none;
